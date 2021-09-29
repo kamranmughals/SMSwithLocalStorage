@@ -1,7 +1,6 @@
 
 
 
-
 function add(){
 //     let sname = document.getElementById('name').value;
 //     let sfather = document.getElementById('father').value;
@@ -19,10 +18,11 @@ function add(){
 //         "sphone":sphone
 //     })
 //     localStorage.setItem("user", JSON.stringify(user_record));
-// 
+var formarea = document.querySelector('.form-area');
+    var success = document.querySelector('.success-area');
     let data = JSON.parse(localStorage.getItem('data')) || [];
     data.push({
-        id: document.getElementById('id').value,
+        id: document.getElementById('rollNo').value,
         name: document.getElementById('name').value,
         father: document.getElementById('father').value,
         age: document.getElementById('age').value,
@@ -30,9 +30,22 @@ function add(){
         depart: document.getElementById('phone').value
     })
     localStorage.setItem('data', JSON.stringify(data));
+    success.innerHTML = '<span class="alert-success" type="button" onclick="closearea()">Student has been Successfully added!!  &times</span>'
+    formarea.reset();
+    return false;
 
 }
 
+
+function closearea(){
+    var close = document.querySelector('.alert-success');
+    if(close.style.display === "none"){
+        close.style.display = "block";
+    }
+    else{
+        close.style.display ="none";
+    }
+}
 function show(){
 
     if(localStorage.getItem('data')){
@@ -40,7 +53,8 @@ function show(){
     content.innerHTML = "";
     JSON.parse(localStorage.getItem('data')).forEach(data1 => {
         content.innerHTML += data1.name + data1.father + data1.age + data1.phone;
-        
     });
     }
 }
+
+

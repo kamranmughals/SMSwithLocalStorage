@@ -25,14 +25,16 @@
 .button-area{
     display: flex;
     width: 100%;
-    transform: translate(604.5px, 190px);
     margin: 0 auto;
 }
-a .text{
+.button-area a .text{
     padding: 40px 60px;
     margin: 10px;
     cursor: pointer;
+    top: 50%;
+    left: 50%;
     text-align: center;
+    transform: translate(37.70rem, 12rem);
     letter-spacing: 1px;
     line-height: 1.5em;
     border-radius: 30px;
@@ -44,7 +46,7 @@ a .text{
     text-transform: capitalize;
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
-a .text{
+.button-area a .text{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 a .text:hover{
@@ -56,12 +58,22 @@ a .text:hover{
 .img2{
     width: 40%;
 }
+/* adding htmls area */
 .form-area{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -45%);
     text-align: center;
+    border: 0.1px solid black;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 2000px rgba(255,255, 255, 0.2);
+    background: initial;
+    background-attachment: fixed;
+}
+.form-area{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .control-area span{
     float: left;
@@ -69,9 +81,78 @@ a .text:hover{
     margin: 10px;
     font-weight: 600;
 }
-.input-box{
+.input-area{
     float: right;
     padding: 10px;
     width: 250px;
     margin: 10px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+.heading h2{
+    text-align: center;
+    padding: 20px;
+}
+.container-area{
+    background-color:#d4ebf2;
+    height: 100vh;
+}
+.buttons{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 17rem;
+    text-align: center;
+}
+.add{
+    padding: 10px 30px;
+    border-radius: 10px;
+    outline: none;
+    border: 0.1px solid;
+    font-size: 16px;
+    background-color: #3778CB;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.add:hover{
+    background-color: #4f93ec;
+    transform: translateY(4px);
+}
+.alert-success {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    cursor: pointer;
+    color: rgb(1, 185, 1);
+    margin-top: 19rem;
+    padding:20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* Back button */
+.back-btn a{
+    text-decoration: none;
+    background-color: #3778CB;
+    margin-left: 20px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.back-btn a:hover{
+    background-color: #4f93ec;
+}
+
+.back-btn:hover{
+    transition: 0.5s all;
+    transform: translateY(4px);
+}
+

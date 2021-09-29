@@ -8,44 +8,50 @@
     <title>SMS</title>
 </head>
 <body>
+    <div class="container-area">
     <!-- Title-area -->
     <div class="title-area">
         <h2>Student Management System</h2>
         <h4>(Adding student to our database)</h4>
     </div>
+    <div class="heading">
+        <h2>Adding Student Details</h2>
+    </div>
     <!-- Input-Area -->
-    <div class="input-box">
-        <form action="" method="GET" class="form-area">
+        <form action="" method="POST" class="form-area">
             <div class="control-area">
                 <label for=""><span>Roll No#</span></label>
-                <input class="input-box" type="text" id="rollNo">
+                <input class="input-area" type="text" id="rollNo" required placeholder="1-100000">
             </div>
             <div class="control-area">
-                <label for=""><span>Student Name</span></label>
-                <input class="input-box" type="text" id="name">
+                <label for=""><span>Student Name*</span></label>
+                <input class="input-area" type="text" id="name" required placeholder="student name">
             </div>
             <div class="control-area">
                 <label for=""><span>Age</span></label>
-                <input class="input-box" type="text" id="age">
+                <input class="input-area" type="text" id="age" required placeholder="1-24">
             </div>
             <div class="control-area">
-                <label for=""><span>Father Name</span></label>
-                <input class="input-box" type="text" id="father">
+                <label for=""><span>Father Name*</span></label>
+                <input class="input-area" type="text" id="father"required placeholder="father name">
             </div>
             <div class="control-area">
-                <label for=""><span>Telephone</span></label>
-                <input class="input-box" type="text" id="phone">
+                <label for=""><span>Telephone*</span></label>
+                <input class="input-area" type="text" id="phone" required placeholder="+92 3417938432">
             </div>
             <div class="control-area">
                 <label for=""><span>Department</span></label>
-                <input class="input-box" type="text" id="depart">
+                <input class="input-area" type="text" id="depart" required placeholder="CS/IT/SE....upto so on etc">
             </div>
         </form>
-    </div>
     <div class="buttons">
-        <button class="add" onclick="add()">add student</button>
+        <input type="submit" class="add" onclick="add()" value="Add Student">
+    </div>
+    <div class="back-btn">
+        <a href="index.html"><span>&#8592; Go Back</span></a>
     </div>
     <div class="success-area"></div>
+</div>
 </body>
 <script src="script.js"></script>
 </html>
