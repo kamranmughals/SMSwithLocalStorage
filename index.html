@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>SMS</title>
 </head>
 <body>
-    <div class="input-box">
-        <input type="text" id="name">
-        <input type="text" id="father">
-        <input type="text" id="age">
-        <input type="text" id="phone">
+    <div class="container">
+        <!-- Title-area -->
+        <div class="title-area">
+            <h2>Student Management System</h2>
+            <h4>(Adding student to our database)</h4>
+        </div>
+        <!-- Buttons-area -->
+        <div class="button-area">
+            <a href="add.html"><button class="text"><img class="img" src="https://img.icons8.com/color/48/000000/add--v1.png"><p>Create student record</p></button></a>
+        </div>
+        <div class="button-area">
+            <a href="show.html"><button class="text"><img class="img2"src="./images/icons8-show-property-48.png"><p>Display Saved Record</p></button></a>
+        </div>
     </div>
-    <div class="buttons">
-        <button class="add" onclick="add()">ADD</button>
-        <button class="show" onclick="show()">View</button>
-    </div>
-    <div class="content-area"></div>
 </body>
 <script src="script.js"></script>
 </html>

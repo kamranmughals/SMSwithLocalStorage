@@ -22,10 +22,12 @@ function add(){
 // 
     let data = JSON.parse(localStorage.getItem('data')) || [];
     data.push({
+        id: document.getElementById('id').value,
         name: document.getElementById('name').value,
         father: document.getElementById('father').value,
         age: document.getElementById('age').value,
-        phone: document.getElementById('phone').value
+        phone: document.getElementById('phone').value,
+        depart: document.getElementById('phone').value
     })
     localStorage.setItem('data', JSON.stringify(data));
 

@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+.title-area{
+    text-align: center;
+    background-color: #3778CB;
+    text-transform: uppercase;
+    padding: 10px;
+    color: white;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.container{
+    background: url(./images/sincerely-media-nGrfKmtwv24-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 110vh;
+    width: 100%;
+}
+.button-area{
+    display: flex;
+    width: 100%;
+    transform: translate(604.5px, 190px);
+    margin: 0 auto;
+}
+a .text{
+    padding: 40px 60px;
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    border-radius: 30px;
+    border: none;
+    background-attachment: fixed;
+    background: initial;
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.2);
+    text-transform: capitalize;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+a .text{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+a .text:hover{
+    box-shadow: inset 0 0 2000px rgba(170, 170, 170, 0.2);
+}
+.img{
+    width: 40%;
+}
+.img2{
+    width: 40%;
+}
+.form-area{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.control-area span{
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 600;
+}
+.input-box{
+    float: right;
+    padding: 10px;
+    width: 250px;
+    margin: 10px;
+}
