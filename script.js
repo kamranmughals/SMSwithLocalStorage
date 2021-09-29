@@ -27,7 +27,7 @@ var formarea = document.querySelector('.form-area');
         father: document.getElementById('father').value,
         age: document.getElementById('age').value,
         phone: document.getElementById('phone').value,
-        depart: document.getElementById('phone').value
+        depart: document.getElementById('depart').value
     })
     localStorage.setItem('data', JSON.stringify(data));
     success.innerHTML = '<span class="alert-success" type="button" onclick="closearea()">Student has been Successfully added!!  &times</span>'
@@ -50,11 +50,20 @@ function show(){
 
     if(localStorage.getItem('data')){
     var content = document.querySelector('.content-area');
-    content.innerHTML = "";
+    content.innerHTML = '';
     JSON.parse(localStorage.getItem('data')).forEach(data1 => {
-        content.innerHTML += data1.name + data1.father + data1.age + data1.phone;
+        content.innerHTML += '<div id="disdata"><span class="show-details1">' + data1.id + '</span><span class="show-details2">' + data1.name + '</span><span class="show-details3">' + data1.father + '</span><span class="show-details4">' + data1.age + '</span><span class="show-details5">' + data1.phone + '</span><span class="show-details6">' + data1.depart + '</span></div>';
     });
+    }
+    else if(localStorage.getItem('data') === null){
+        content.style.display = "block";
     }
 }
 
 
+{/* <span id="rn" class="user-details">Roll#</span>
+        <span class="user-details">Student Name</span>
+        <span class="user-details">Father name</span>
+        <span class="user-details">Age</span>
+        <span class="user-details">Phone No.</span>
+        <span class="user-details">Department</span> */}
